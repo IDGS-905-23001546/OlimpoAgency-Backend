@@ -1,0 +1,19 @@
+@OlimpoAgency.Api_HostAddress = http://localhost:5000
+
+### Login exitoso
+POST {{OlimpoAgency.Api_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "correo": "admin@olimpo.com",
+  "password": "admin123"
+}
+
+### Login incorrecto
+POST {{OlimpoAgency.Api_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "correo": "admin@olimpo.com",
+  "password": "mal"
+}
