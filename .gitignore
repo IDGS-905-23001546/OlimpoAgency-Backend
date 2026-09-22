@@ -1,3 +1,20 @@
-.vs/ 
-bin/ 
-obj/ 
+# .NET
+bin/
+obj/
+*.user
+*.suo
+
+# Visual Studio
+.vs/
+.vscode/
+
+# Base de datos SQLite local (el proyecto ya usa SQL Server)
+*.db
+*.db-shm
+*.db-wal
+
+# Logs
+*.log
+
+# Configuracion local de NuGet (rutas por maquina)
+nuget.config
